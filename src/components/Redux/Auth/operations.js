@@ -7,9 +7,9 @@ const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 
-// const clearAuthHeader = () => {
-//   axios.defaults.headers.common.Authorization = '';
-// };
+const clearAuthHeader = () => {
+  axios.defaults.headers.common.Authorization = '';
+};
 
 export const register = createAsyncThunk(
   'users/register',
@@ -49,21 +49,16 @@ export const logIn = createAsyncThunk(
  * POST @ /users/logout
  * headers: Authorization: Bearer token
  */
-export const logOut = createAsyncThunk(
-  'users/logOut',
-  async (token, { rejectWithValue }) => {
-    try {
-      await axios.post('users/logout', token, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-    } catch {
-      return rejectWithValue('Failed to log out. Please try again.');
-    }
-  }
-);
+export const logOut = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
+  try {
+    await axios.post('users/logout');
 
+    // After a successful logout, remove the token from the HTTP header
+    clearAuthHeader();
+  } catch (error) {
+    return thunkAPI.rejectWithValue(error.message);
+  }
+});
 /*
  * GET @ /users/current
  * headers: Authorization: Bearer token

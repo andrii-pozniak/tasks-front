@@ -13,7 +13,7 @@ const RegisterPage = lazy(() => import('pages/Register'));
 const LoginPage = lazy(() => import("pages/Login"));
 
 export const App = () => {
-  
+
 const dispatch = useDispatch();
 const { isRefreshing } = useAuth();
 console.log("isRefreshing", isRefreshing)
@@ -38,7 +38,7 @@ useEffect(() => {
         />
         <Route
           path="login"
-          element={<AuthRoutes component={LoginPage} redirectTo="/" />}
+          element={<AuthRoutes component={LoginPage} redirectTo="/tasks" />}
         />
         <Route path="/tasks" element={<Tasks />} />
       </Routes>

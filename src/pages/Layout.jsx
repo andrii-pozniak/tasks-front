@@ -20,7 +20,7 @@ export const Layout = () => {
           </nav>
           <AppBar />
         </Header>   
-        
+                
         <Outlet />             
         <Suspense fallback={null}>          
           <Outlet />
