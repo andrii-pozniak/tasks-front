@@ -9,7 +9,7 @@ export const Layout = () => {
 
   return (
     <>
-          <Container>
+      <Container>
         <Header>
           <nav>
             <Link to="/" end>
@@ -19,8 +19,10 @@ export const Layout = () => {
             {isLoggedIn && <Link to="/tasks"> tasks</Link>}
           </nav>
           <AppBar />
-        </Header>                
-        <Suspense fallback={null}>
+        </Header>   
+        
+        <Outlet />             
+        <Suspense fallback={null}>          
           <Outlet />
         </Suspense>
       </Container>
