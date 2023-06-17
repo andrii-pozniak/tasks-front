@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, useEffect } from "react";
-import { Layout } from "../../pages/Layout";
+import { Layout } from "./pages/Layout";
 // import { HomePage } from "../../pages/HomePage/HomePage";
-import { AuthRoutes } from "../utils/authRoutes";
+import { AuthRoutes } from "./components/utils/authRoutes";
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'components/hooks/useAuth';
 import { refreshUser } from 'components/Redux/Auth/operations';
-import { Tasks } from "../Tasks/Tasks";
+import { Tasks } from "./components/Tasks/Tasks";
 import { RestrictedRoute } from 'components/RestrictedRoute';
 
 const RegisterPage = lazy(() => import('pages/Register'));
