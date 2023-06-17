@@ -1,11 +1,12 @@
 import {
-    StyleButton,
+    // StyleButton,
     StyleText,
     StyleContainer,
   } from 'components/Form/Form.Style';
   import { logOut } from 'components/Redux/Auth/operations';
   import { useDispatch } from 'react-redux';
   import { useAuth } from 'components/hooks/useAuth';
+  import { Link } from 'pages/Layout.Style';
   
   export const UserNav = () => {
     const dispatch = useDispatch();
@@ -14,9 +15,9 @@ import {
     return (
       <StyleContainer>
         <StyleText>Welcome, {user.name}</StyleText>
-        <StyleButton type="button" onClick={() => dispatch(logOut())}>
+        <Link to="/" onClick={() => dispatch(logOut())}>
           Log Out
-        </StyleButton>
+        </Link>
       </StyleContainer>
     );
   };
