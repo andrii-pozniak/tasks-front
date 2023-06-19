@@ -1,5 +1,5 @@
-import { ModalContent, ModalBackdrop, BtnClose } from './Modal.Style';
-import {ReactComponent as Cross} from '../Notices/ItemPetModal/image/Cross.svg';
+import { ModalContent, ModalBackdrop } from './Modal.style';
+// import {ReactComponent as Cross} from '../Notices/ItemPetModal/image/Cross.svg';
 import { createPortal } from 'react-dom';
 import { useEffect, useRef } from 'react';
 
@@ -43,10 +43,7 @@ export const ModalSample = ({ toggleModal, children }) => {
 
   return createPortal(
     <ModalBackdrop onClick={handleBackdropClick}>
-      <ModalContent ref={modalRef}>
-        <BtnClose type="button" onClick={toggleModal}>
-          <Cross/>
-        </BtnClose>
+      <ModalContent ref={modalRef}>        
         {children}
       </ModalContent>
     </ModalBackdrop>,

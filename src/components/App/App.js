@@ -4,7 +4,6 @@ import { Layout } from "../../pages/Layout";
 import { HomePage } from "../../pages/HomePage/HomePage";
 import { AuthRoutes } from "../utils/authRoutes";
 import { useDispatch } from 'react-redux';
-import { useAuth } from 'components/hooks/useAuth';
 import { refreshUser } from 'components/Redux/Auth/operations';
 import { RestrictedRoute } from 'components/RestrictedRoute';
 
@@ -16,8 +15,6 @@ const TasksPage = lazy(() => import('pages/TasksPage'));
 export const App = () => {
 
 const dispatch = useDispatch();
-const { isRefreshing } = useAuth();
-console.log("isRefreshing", isRefreshing)
 
 useEffect(() => {
   dispatch(refreshUser());
