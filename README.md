@@ -1,10 +1,10 @@
 
 <div align="center">
   <a href="https://gradussus.github.io/petly-front/" name="readme-top">
-        <img src="https://media.giphy.com/media/QvBoMEcQ7DQXK/giphy.gif" alt="Logo" width="80" height="80" style="border-radius: 50%">
+       
   </a>
 
-  <h1 align="center">Pet App</h1>
+  <h1 align="center">Task</h1>
   </div>
 
 
