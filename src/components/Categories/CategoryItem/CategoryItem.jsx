@@ -6,6 +6,7 @@ import {
   ItemPage,
   BodyBtn,
 } from "./CategoryItem.style";
+import { Link } from 'pages/Layout.Style';
 import { ModalSample } from "../../Modal/Modal";
 import { CategoryEditPopup } from "../CategoryEditPopup/CategoryEditPopup";
 import { CategoryDeletePopup } from "../CategoryDeletePopup/CategoryDeletePopup";
@@ -52,7 +53,7 @@ export const CategoryItem = ({ id, name, dataEnd, onDelete, data }) => {
         <ItemPage>tasks</ItemPage>
         <ItemPage>{dataEnd}</ItemPage>
         <BtnBody>
-          <ItemBtn type="button">actions</ItemBtn>
+        <Link to={`/tasks/${id}?categoryName=${name}`}>actions</Link>
           <ItemBtn type="button" onClick={onChangeModal}>
             more
           </ItemBtn>

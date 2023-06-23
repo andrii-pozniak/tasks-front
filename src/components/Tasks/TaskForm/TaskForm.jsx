@@ -1,35 +1,38 @@
 import React from "react";
 import { Formik, Form } from "formik";
+
 import {
-  Container,
   Input,
   InputContainer,
   InputData,
-} from "./CategoryForm.style";
+} from "components/Categories/CategoryForm/CategoryForm.style";
+import { Container } from "./TaskForm.style";
 import {
-    BtnDelete,
-    Button,
-    
-  } from "../CategoryDeletePopup/CategoryDeletePopup.style";
-const CategoryForm = ({ onAddCategory, onChangeModalAdd }) => {
+  BtnDelete,
+  Button,
+} from "components/Categories/CategoryDeletePopup/CategoryDeletePopup.style";
+
+export const TaskForm = ({ onAddTask, onChangeModalAdd }) => {
   const initialValues = {
     name: "",
+    description: "",
     dataStart: "",
     dataEnd: "",
   };
 
   const handleSubmit = (values, { resetForm }) => {
-    onAddCategory(values);
+    onAddTask(values);
     resetForm();
     onChangeModalAdd();
   };
-
   return (
     <Container>
       <Formik initialValues={initialValues} onSubmit={handleSubmit}>
         <Form>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">name</label>
           <Input type="text" id="name" name="name" />
+          <label htmlFor="description">Description</label>
+          <Input type="text" id="description" name="description" />
           <InputContainer>
             <label htmlFor="dataStart">Start Date:</label>
             <InputData type="date" id="dataStart" name="dataStart" />
@@ -39,7 +42,7 @@ const CategoryForm = ({ onAddCategory, onChangeModalAdd }) => {
             <label htmlFor="dataEnd">End Date:</label>
             <InputData type="date" id="dataEnd" name="dataEnd" />
           </InputContainer>
-          <BtnDelete >
+          <BtnDelete>
             <Button type="button" onClick={onChangeModalAdd}>
               cancel
             </Button>
@@ -50,5 +53,3 @@ const CategoryForm = ({ onAddCategory, onChangeModalAdd }) => {
     </Container>
   );
 };
-
-export default CategoryForm;

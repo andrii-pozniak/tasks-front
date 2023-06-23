@@ -24,6 +24,7 @@ font-family: 'Roboto';
 export const BtnBody = styled.div`
 display: flex;
 justify-content: space-around;
+align-items: baseline;
 
 
 `;

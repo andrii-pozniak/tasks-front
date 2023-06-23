@@ -21,7 +21,7 @@ margin-top: 20px;
 `;
 
 export const Button = styled.button`
-padding:  ${p => p.theme.space[3]}px;
+padding: ${p => p.theme.space[3]}px ${p => p.theme.space[4]}px;
 border: 1px solid ${p => p.theme.colors.black};
 background-color: ${p => p.theme.colors.background};
 `;

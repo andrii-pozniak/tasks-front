@@ -15,9 +15,8 @@ export const Layout = () => {
             <Link to="/" end>
               {" "}
               Home{" "}
-              </Link>
-            {isLoggedIn && <Link to="/categories"> categories</Link>}            
-            {isLoggedIn && <Link to="/tasks"> tasks</Link>}
+            </Link>
+            {isLoggedIn && <Link to="/categories"> categories</Link>}
           </nav>
           <AppBar />
         </Header>

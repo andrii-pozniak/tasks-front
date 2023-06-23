@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const CategoryItemsBody = styled.div`
 position: relative;
 justify-content: center;
+margin-left: auto;
+margin-right: auto;
 width: 70%;
 padding: 50px;
 border: 1px solid ${p => p.theme.colors.black};

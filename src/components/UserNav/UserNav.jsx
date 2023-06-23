@@ -11,7 +11,6 @@ import {
   export const UserNav = () => {
     const dispatch = useDispatch();
     const { user } = useAuth();
-    console.log("user", user)
     return (
       <StyleContainer>
         <StyleText>Welcome, {user.name}</StyleText>

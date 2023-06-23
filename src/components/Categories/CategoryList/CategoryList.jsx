@@ -9,6 +9,7 @@ import {
 import CategoryForm from "components/Categories/CategoryForm/CategoryForm";
 import { CategoryItem } from "components/Categories/CategoryItem/CategoryItem";
 import { ModalSample } from "../../Modal/Modal";
+import { TasksList } from "components/Tasks/TaskList/TaskList";
 
 export const CategoryList = () => {
   const [data, setData] = useState(null);
@@ -24,17 +25,26 @@ export const CategoryList = () => {
     (async () => {
       try {
         setStatus("pending");
-        console.log("data");
         const data = await fetchCategoriesData();
         setStatus("fulfilled");
-        console.log("data", data);
         setData(data);
       } catch {
         setStatus("rejected");
       }
     })();
-  }, );
+  }, [newCategory]);
 
+  useEffect(() => {
+    if (newCategory) {
+      setData((prevData) => {
+        if (prevData) {
+          return [...prevData, newCategory];
+        } else {
+          return [newCategory];
+        }
+      });
+    }
+  }, [newCategory]);
 
   const toggleModalAdd = () => {
     setShowModalAdd(!showModalAdd);
@@ -65,6 +75,7 @@ export const CategoryList = () => {
           return [addedCategory];
         }
       });
+      setNewCategory({ name: "", dataStart: "", dataEnd: "" });
     } catch (error) {
       console.error("Failed to add category:", error);
     }
@@ -76,7 +87,6 @@ export const CategoryList = () => {
         <Button
           button="button"
           onClick={() => {
-            onChangeModalAdd();
             onChangeModalAdd();
           }}
         >
@@ -99,7 +109,12 @@ export const CategoryList = () => {
                   data={data}
                   newCategory={newCategory}
                   setNewCategory={setNewCategory}
-                />
+                >
+                  <TasksList
+                    categoryId={() => handleDeleteCategory(item._id)}
+                    categoryName={item.name}
+                  />
+                </CategoryItem>
               )
           )}
 

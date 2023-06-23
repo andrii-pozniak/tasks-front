@@ -1,4 +1,3 @@
-// import { NavLink } from 'react-router-dom';
 import { Link } from 'pages/Layout.Style';
 
 export const AuthNav = () => {
