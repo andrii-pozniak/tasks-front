@@ -1,70 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <a href="https://gradussus.github.io/petly-front/" name="readme-top">
+        <img src="https://media.giphy.com/media/QvBoMEcQ7DQXK/giphy.gif" alt="Logo" width="80" height="80" style="border-radius: 50%">
+  </a>
 
-## Available Scripts
+  <h1 align="center">Pet App</h1>
+  </div>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About The Project
+The development **Future developer** has created a project that helps people create new task. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ <a href="https://github.com/andrii-pozniak/tasks-api">
+        <img src="public/readme/node.png" alt="Logo" width="15" height="15" > 
+Node
+</a>
 
-### `npm run build`
+ <a href="https://react.dev">
+        <img src="public/readme/react.png" alt="Logo" width="15" height="15" > 
+React
+</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ <a href="https://redux.js.org/">
+        <img src="public/readme/redux.png" alt="Logo" width="15" height="15" > 
+Redux
+</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ <a href="https://formik.org/">
+        <img src="public/readme/formic.png" alt="Logo" width="15" height="15" > 
+Formik
+</a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ <a href="https://www.npmjs.com/package/axios">
+        <img src="public/readme/axios.svg" alt="Logo" width="15" height="15" > 
+Axios
+</a>
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">back to top</a>)
+(<a href="https://github.com/andrii-pozniak/tasks-front">try now</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/andrii-pozniak/tasks-front.git
+   ```
 
-## Learn More
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the project
+   ```sh
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)
+(<a href="https://andrii-pozniak.github.io/tasks-front">try now</a>)</p>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)
+(<a href="https://andrii-pozniak.github.io/tasks-front">try now</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact Us
 
-### Advanced Configuration
+Project Link: [https://andrii-pozniak.github.io/tasks-front](https://andrii-pozniak.github.io/tasks-front/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Developer - [LinkedIn](https://www.linkedin.com/in/andrii-pozniak-69aa31222/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)
+(<a href="https://andrii-pozniak.github.io/tasks-front">try now</a>)</p>
