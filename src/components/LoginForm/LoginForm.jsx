@@ -6,7 +6,7 @@ import {
   StyleForm,
   StyleInput,
   Section,
-} from 'components/Form/Form.Style';
+} from './LoginForm.style';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
