@@ -16,6 +16,7 @@ background-color: ${p => p.theme.colors.background};
 export const BtnDelete = styled.div`
 display: flex;
 justify-content: space-around;
+gap: 20px;
 width: 100%;
 margin-top: 20px;
 `;

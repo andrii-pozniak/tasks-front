@@ -103,8 +103,8 @@ export const CategoryList = () => {
                   key={item._id}
                   id={item._id}
                   name={item.name}
-                  dataStart={item.dataStart}
-                  dataEnd={item.dataEnd}
+                  dataStart={item.dataStart.slice(0, 10)}
+                  dataEnd={item.dataEnd.slice(0, 10)}
                   onDelete={() => handleDeleteCategory(item._id)}
                   data={data}
                   newCategory={newCategory}

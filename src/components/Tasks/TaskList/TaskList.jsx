@@ -135,8 +135,8 @@ export const TasksList = () => {
                     id={item._id}
                     categoryId={item.id}
                     name={item.name}
-                    dataStart={item.dataStart}
-                    dataEnd={item.dataEnd}
+                    dataStart={item.dataStart.slice(0, 10)}
+                    dataEnd={item.dataEnd.slice(0, 10)}
                     onDelete={() => handleDeleteTask(item._id)}
                     data={data}
                     handleUpdateTask={handleUpdateTask}
