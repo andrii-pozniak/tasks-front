@@ -2,7 +2,7 @@ import {
     // StyleButton,
     StyleText,
     StyleContainer,
-  } from 'components/Form/Form.Style';
+  } from 'components/LoginForm/LoginForm.style';
   import { logOut } from 'components/Redux/Auth/operations';
   import { useDispatch } from 'react-redux';
   import { useAuth } from 'components/hooks/useAuth';
